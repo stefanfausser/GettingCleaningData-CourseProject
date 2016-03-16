@@ -11,7 +11,7 @@ destfileZip <- "UCI_HAR.zip"
 
 # packages files
 filesTrain <- c("UCI HAR Dataset/train/X_train.txt", "UCI HAR Dataset/train/y_train.txt", "UCI HAR Dataset/train/subject_train.txt")
-filesTest <- c("UCI HAR Dataset/test/X_test.txt", "UCI HAR Dataset/test/y_test.txt", "UCI HAR Dataset/test/y_test.txt")
+filesTest <- c("UCI HAR Dataset/test/X_test.txt", "UCI HAR Dataset/test/y_test.txt", "UCI HAR Dataset/test/subject_test.txt")
 fileFeatures <- "UCI HAR Dataset/features.txt"
 fileLabels <- "UCI HAR Dataset/activity_labels.txt"
 

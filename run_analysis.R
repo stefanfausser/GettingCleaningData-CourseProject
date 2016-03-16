@@ -68,11 +68,11 @@ names(tidyData) <- gsub("-", "\\.", names(tidyData))
 names(tidyData) <- gsub("fBodyBody", "fBody", names(tidyData))
 
 # save the first tidy data set
-write.table(tidyData, "UCI_HAR_mean_std.txt")
+write.table(tidyData, "UCI_HAR_mean_std.txt", row.name=FALSE)
 
 # Assignment task 5: From the last tidy data set, create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 tidyData <- ddply(tidyData, .(subject, activity), function(x) colMeans(x[, 3:ncol(tidyData)]))
 
 # save the second tidy data set
-write.table(tidyData, "UCI_HAR_averages.txt")
+write.table(tidyData, "UCI_HAR_averages.txt", row.name=FALSE)
